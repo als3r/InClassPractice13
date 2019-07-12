@@ -35,6 +35,12 @@ public class Driver {
 	}
 	
 	
+	/**
+	 * Calculate an average of arrayList of integers
+	 * 
+	 * @param integers (ArrayList<Integer>)
+	 * @return average
+	 */
 	public static double calcAverage(ArrayList<Integer> integers) {
 		
 		int sum = 0;
