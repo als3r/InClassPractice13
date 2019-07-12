@@ -4,6 +4,7 @@ public class Driver {
 
 	public static void main(String[] args) {
 		
+		// Create ArrayList 
 		ArrayList<Integer> integers = new ArrayList<Integer>(25); 
 		
 		// Add 25 integers to ArrayList with value of -1
@@ -27,5 +28,22 @@ public class Driver {
 		for (int i = 1; i <= 25; i++) {
 			System.out.println(i + " : " + integers.get(i-1));
 		}
+		
+		double average = calcAverage(integers);
+		
+		System.out.println("\n" + "Average: " + average);
+	}
+	
+	
+	public static double calcAverage(ArrayList<Integer> integers) {
+		
+		int sum = 0;
+		int numberElements = integers.size();
+		
+		for(int number : integers) {
+			sum += number;
+		}
+		
+		return numberElements > 0 ? sum / numberElements : 0;
 	}
 }
